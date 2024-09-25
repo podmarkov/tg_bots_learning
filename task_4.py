@@ -1,8 +1,8 @@
 import requests
-
+import my_token
 
 API_URL = 'https://api.telegram.org/bot'
-BOT_TOKEN = '7306454882:AAG-PS2hldOdkk3TWgnzRDDsjvDxUakCeKs'
+BOT_TOKEN = my_token.tkn()
 
 
 
