@@ -71,6 +71,10 @@ async def echo_audio(message: Message):
 async def echo_voice(message: Message):
     await message.reply_voice(voice=message.voice.file_id)
 
+@dp.message(F.sticker)
+async def echo_sticker(message: Message):
+    await message.reply_sticker(sticker=message.sticker.file_id)
+
 @dp.message(F.document)
 async def echo_document(message: Message):
     await message.reply_document(document=message.document.file_id)
