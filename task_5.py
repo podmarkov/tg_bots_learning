@@ -4,7 +4,7 @@ import my_token
 
 from random import choice
 API_URL = 'https://api.telegram.org/bot'
-BOT_TOKEN = my_token.tkn()
+BOT_TOKEN = my_token.tkn
 API_CATS_URL = 'https://api.thecatapi.com/v1/images/search'
 API_DOGS_URL = 'https://random.dog/woof.json'
 API_FOXES_URL = 'https://randomfox.ca/floof/'
