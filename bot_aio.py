@@ -79,6 +79,12 @@ async def echo_sticker(message: Message):
 async def echo_document(message: Message):
     await message.reply_document(document=message.document.file_id)
 
+@dp.message(F.animation)
+async def echo_animation(message: Message):
+    await message.reply_animation(animation=message.animation.file_id)
+
+
+
 # Этот хэндлер будет срабатывать на любые ваши текстовые сообщения,
 # кроме команд "/start" и "/help"
 @dp.message()
